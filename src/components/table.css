@@ -1,0 +1,48 @@
+table {
+    text-align: left;
+    border-collapse: collapse;
+    border-color: transparent;
+  }
+  
+  th,
+  td {
+    padding: 10px 5px;
+    width: 170px;
+  }
+  thead tr:nth-child(1) {
+    background-color: #ffbf00;
+    color: #fff;
+    text-align: center;
+  }
+  thead tr:nth-child(2) {
+    background-color: #fbceb1;
+    color: #fff;
+  }
+  
+  thead {
+    border: none;
+  }
+  thead tr,
+  thead td {
+    border: none;
+  }
+  .depth-0 {
+    background-color: #f2d2bd;
+  }
+  
+  .depth-1 {
+    background-color: #fad5a5;
+  }
+  
+  .depth-2 {
+    background-color: #ffd580;
+  }
+  
+  button {
+    background-color: transparent;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 130%;
+  }

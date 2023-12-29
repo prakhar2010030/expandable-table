@@ -1,0 +1,17 @@
+.bg {
+  background: linear-gradient(
+    18deg,
+    rgb(245, 185, 125) 7%,
+    rgb(238, 209, 159) 42%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.bg h1 {
+  text-transform: capitalize;
+  font-weight: 900;
+  margin-top: 2rem;
+}
