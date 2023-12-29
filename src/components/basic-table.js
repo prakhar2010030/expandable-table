@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import './table.css'
+import React, { useMemo, useState } from "react";
+import "./table.css";
 import {
   createTable,
   useTableInstance,
   getCoreRowModel,
   getExpandedRowModel,
 } from "@tanstack/react-table";
-import data from "../randomData.json";
+import Data from "../randomData.json";
 
 const table = createTable();
-const defaultData = [...data];
 const defaultColumns = [
   table.createGroup({
     header: "Full Name",
@@ -82,11 +81,11 @@ const defaultColumns = [
   }),
 ];
 const BasicTable = () => {
-  // eslint-disable-next-line
-  const [data, setData] = useState([...defaultData]);
-  // eslint-disable-next-line
-  const [columns, setColumns] = useState([...defaultColumns]);
   const [expanded, setExpanded] = useState({});
+
+  const data = useMemo(() => Data, []);
+  const columns = useMemo(() => defaultColumns, []);
+
   const instance = useTableInstance(table, {
     data,
     columns,
